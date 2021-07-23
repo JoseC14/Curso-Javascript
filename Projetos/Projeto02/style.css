@@ -1,0 +1,23 @@
+#bodynota{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:250px;
+    background-image: url(imagens/body.jpg);
+    
+}
+#but{
+    background-color: green;
+}
+#outputResult{
+    background-color:black;
+    color: white;
+}
+#outputMedia{
+    background-color: black;
+    color: white;
+}
+#outputDevendo{
+    background-color: black;
+    color: white;
+}
