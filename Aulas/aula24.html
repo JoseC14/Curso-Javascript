@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manipular elementos com document.getElementById</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>innerHTML</title>
 </head>
 <body>
-    <input id="input1">Digite o primeiro número a ser multiplicado
-    <br>
-    <input id="input2">Digite o segundo número a ser multiplicado
-    <br>
-    <button onclick="mostrarInput()">Clique-me</button>
-    <script>
-      function mostrarInput(){
+  <p id="texto">CFB Cursos</p>
+  <input type="text" id="cxtexto" value="Curso JS">
+<div id="dv">texto da DIV</div>
+  <script>
+      
+     document.getElementById("texto").innerHTML= "Aula 24"
+     document.getElementById("dv").innerHTML= "Novo texto"
 
-      var input1=document.getElementById("input1")
-      var input2=document.getElementById("input2")
-      var res=input1*input2
 
-        alert(res)
-
-      }
-    </script>
+  </script>
 </body>
 </html>

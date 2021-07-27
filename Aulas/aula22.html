@@ -4,21 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Declaração de varíavel com Let</title>
+    <title>Tratamento de erro com Try Catch e Finally</title>
 </head>
 <body>
     <script>
 
-       var num=10
+        var num //maximo 10
 
-       document.write(num+"<br>")
+       try{
+          num=prompt("Digite um valor")
+          if(num>10){
+          throw new Error("Valor inválido,  o valor deve ser menor ou igual a 10")
+          }
+          document.write("Valor: "+num)
 
-       if(num==10){
-           let num=5
-           document.write(num+"<br>")
+       }catch(e){
+        console.log("ERRO : "+e.message)
+        document.write("ERRO: "+e.message)
+
+       }finally{
+
+          document.write("<br>"+"Fim do tratamento")
+
        }
-
-       document.write(num+"<br>")
 
     </script>
 </body>

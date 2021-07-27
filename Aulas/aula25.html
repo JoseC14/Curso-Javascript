@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>innerHTML</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByTagName</title>
 </head>
 <body>
-  <p id="texto">CFB Cursos</p>
-  <input type="text" id="cxtexto" value="Curso JS">
-<div id="dv">texto da DIV</div>
-  <script>
-      
-     document.getElementById("texto").innerHTML= "Aula 24"
-     document.getElementById("dv").innerHTML= "Novo texto"
+    <h2>CFB Cursos</h2>
+    <p>Curso de Javascript</p>
+    <h2>Aula25</h2>
+    <p>www.youtube.com/cfbcursos</p>
+    <h2>cfbcursos.com.br</h2>
+    <script>
+   
+     var tags = document.getElementsByTagName("*")
+    
+     tags[10].innerHTML="NOVO TEXTO"
+     tags[10].style.color="#f00"
 
-
-  </script>
+    </script>
 </body>
 </html>
