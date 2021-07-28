@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Calcule seu salario  por hora</title>
+</head>
+<body id="body">
+    <div id="div">
+    <h1>Calcule seu salário por hora</h1>
+    <p>Quanto você ganha por mês?</p>
+    <input type="number" id=salarioMes>
+    <p>Quantas horas você trabalha...</p>
+    <input type="radio" id="porMes" onclick="deschecar()">por mês
+    <br>
+    <input type="radio" id="porDia" onclick="checar()">por dia
+    <br>
+
+    <p id ="p1"style=visibility:hidden>digite abaixo quantas horas você trabalha por dia</p>
+    <input type="number" style=visibility:hidden id="horasTrabalhoDia">
+    <br>
+    <p id="p2" style=visibility:hidden>Digite quantos dias você trabalha por semana</p>
+    <br>
+    <input id="diasTrabalhoSemana" style=visibility:hidden>
+    <br>
+
+    <p id="p3" style=visibility:hidden>Digite quantas horas você trabalha por mês</p>
+    <br>
+    <input type="number" id="horasTrabalhoMes" style=visibility:hidden>
+    <br>
+
+    <button onclick="calcularOrcamento()">Calcular Salário</button>
+    <br>
+    <output id="res">Seu salário aparecerá aqui</output>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
