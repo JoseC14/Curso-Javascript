@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <script>
+
+        var num1 = prompt("Digite um numero")
+
+        var num2 = prompt("Digite o segundo numero")
+
+        var res = num1/num2
+
+        try{  
+            
+            if(num1=0||num2==0){
+
+            throw new Error("Erro: É impossivel dividir por zero")
+       } else if(num1=String){
+            throw new Error("Erro: Valor informado do primeiro número não é numérico")
+
+          }else if(num2=String){
+              throw new Error("Erro: Valor informado do segundo número não é numérico")
+          }
+           document.write("Resultado: "+res)
+        }catch(e){
+            
+            alert(e.message)
+        }finally{
+
+            console.log("Fim do tratamento")
+        }
+
+    </script>
+</body>
+</html>

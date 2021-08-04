@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 05</title>
+</head>
+<body>
+    <script>
+
+        var vetorNum=[]
+
+        vetorNum[0]=prompt("Digite um número")
+        vetorNum[1]=prompt("Digite outro número")
+        vetorNum[2]=prompt("Digite outro número")
+
+       if(vetorNum[0]<vetorNum[1]<vetorNum[2]){
+           document.write(vetorNum[2],vetorNum[1],vetorNum[0])
+        }else if(vetorNum[2]<vetorNum[1]<vetorNum[0]){
+            document.write(vetorNum[0],vetorNum[1],vetorNum[2])
+        }else if(vetorNum[1]>vetorNum[0]>vetorNum[2]){
+            document.write(vetorNum[2],vetorNum[0],vetorNum[1])
+        }
+    </script>
+</body>
+</html>

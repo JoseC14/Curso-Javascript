@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+
+    <input type="number" id="nota1">Digite sua primeira nota</input>
+    <br>
+    <input type="number" id="nota2">Digite sua segunda nota</input>
+    <br>
+    <input type="number" id="nota3">Digite sua terceira nota</input>
+    <br>
+    <input type="number" id="nota4">Digite sua quarta nota</input>
+
+    <button id="but" onclick="calcularMedia()">Calcular média</button>
+
+
+   </div> 
+
+   <script>
+       function calcularMedia(){
+
+          var nota1 = document.getElementById(nota1)
+          var nota2 = document.getElementById(nota2)
+          var nota3 = document.getElementById(nota3)
+          var nota4 = document.getElementById(nota4)
+
+          var media=(nota1+nota2+nota3+nota4)/2
+
+          if(media>=6&&nota<=9){
+             alert("Aprovado com Perfeição")
+          }else if(nota<6&&nota>=0){
+              alert("Reprovado")
+          }else if(nota=10){
+              alert("Aprovado com Perfeição")
+          }else{
+              alert("Nota inválida")
+          }
+
+       }
+
+   </script>
+</body>
+</html>
